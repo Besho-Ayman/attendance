@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام متابعة الحضور والغياب</title>
+</head>
+<body>
+    <h1>نظام متابعة الحضور والغياب</h1>
+    <form  id="attendanceForm" action="process_attendance.php" method="post">
+
+  
+        <label for="studentID">رقم الطالب:</label>
+        <input type="text" id="studentID" name="studentID" required>
+
+        <label for="status">الحالة:</label>
+        <select id="status" name="status" required>
+            <option value="present">حاضر</option>
+            <option value="absent">غائب</option>
+        </select>
+
+        <button type="button" onclick="submitAttendance()">تسجيل</button>
+    </form>
+
+
+    <h1>عرض الكل</h1>
+    <form  id="attendanceForm" action="process_attendance.php" method="post">
+
+  
+        <label for="studentID1">رقم الطالب:</label>
+        <input type="text" id="studentID1" name="studentID1" required>
+
+        
+       
+        <button type="button" onclick="submitAttendance()">حذف</button>
+    </form>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
